@@ -28,7 +28,6 @@ const map = [[{ label: 'A1', text: 'Volt egyszer a köröskörül erdőben egy s
   { label: 'E3', text: 'A tölgyfa nagyon sokáig nem tudott szólni, csak állt közöttük, szégyenkezve. Aztán egyszer csak gondolt egyet, és kitárta ág-karjait a madarak fel:' },
   { label: 'E4', text: '- Gyertek ide, hozzám!' },
   { label: 'E5', text: 'Azok nyomban odasereglettek, és örömükben olyan vidáman kezdtek csivitelni, füttyögetni, énekelni, mintha mi sem történt volna.' }]];
-console.log(map[4][4]);
 
 module.exports = {
   map
