@@ -1,8 +1,8 @@
 const input = require('./input');
 const navigation = require('./navigation');
 // const output = require('./output');
-// const map = require('./map');
-
+const map = require('./map');
+/*
 const map = [[{ label: 'A1', text: 'Volt egyszer a köröskörül erdőben egy sudár, fiatal tölgyfa. Kék ég felé nyújtózkodott, lombjain át arany napfényt szitálgatott, és erős gyökerével a föld minden erejét magába szívta. Ő volt a legszebb az erdőn.' },
   { label: 'A2', text: 'A madarak vágyakozva nézték erős ágai hajlását, védelmező lombját. Szerettek volna rá fészket rakni, de a tölgyfa dölyfösen rázta magát.' },
   { label: 'A3', text: '-Hess innen, hangos népség! Nem leszek fészektartó! Szép koronám nem ilyenre termett. Hess, hess!' },
@@ -28,7 +28,7 @@ const map = [[{ label: 'A1', text: 'Volt egyszer a köröskörül erdőben egy s
   { label: 'E3', text: 'A tölgyfa nagyon sokáig nem tudott szólni, csak állt közöttük, szégyenkezve. Aztán egyszer csak gondolt egyet, és kitárta ág-karjait a madarak fel:' },
   { label: 'E4', text: '- Gyertek ide, hozzám!' },
   { label: 'E5', text: 'Azok nyomban odasereglettek, és örömükben olyan vidáman kezdtek csivitelni, füttyögetni, énekelni, mintha mi sem történt volna.' }]];
-
+*/
 const location = {
   x: 0,
   y: 0
@@ -38,6 +38,7 @@ console.log('Fésűs Éva: A büszke tölgyfa');
 while (location.x !== 4 || location.y !== 4) {
   const dir = input.inputFromNumPad();
   navigation.move(location, dir);
-  console.log(map[location.y][location.x].text);
-  console.log(location.y, location.x);
+  console.log(map.map[location.y][location.x].text);
+  // console.log(location.y, location.x);
 }
+console.log('Vége!');
