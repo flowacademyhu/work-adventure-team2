@@ -4,7 +4,7 @@ const navigation = require('./navigation');
 const map = require('./map');
 
 const location = {
-  x: -1,
+  x: 0,
   y: 0
 };
 console.log('Your options:\n 1: Southwest;\n 2: South;\n 3: Southeast;\n 4: West;\n 6: East;\n 7: Northwest;\n 8: North;\n 9: Northeast.');
