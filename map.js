@@ -29,8 +29,8 @@ const map = [[{ label: 'A1', text: 'Volt egyszer a köröskörül erdőben egy s
   { label: 'E4', text: '- Gyertek ide, hozzám!' },
   { label: 'E5', text: 'Azok nyomban odasereglettek, és örömükben olyan vidáman kezdtek csivitelni, füttyögetni, énekelni, mintha mi sem történt volna.' }]];
 
-const mapOut = [[[' '], [' '], [' '], [' '], [' ']], [[' '], [' '], [' '], [' '], [' ']], [[' '], [' '], [' '], [' '], [' ']], [[' '], [' '], [' '], [' '], [' ']], [[' '], [' '], [' '], [' '], [' ']]];
-
+const mapOut = [[' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ']];
+console.log(mapOut);
 module.exports = {
   map,
   mapOut
