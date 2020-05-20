@@ -43,7 +43,7 @@ const move = (location, direction) => { // move return's with the new location
       }
       break;
     case 7:
-      if (location.x !== 0 || location.y !== 0) {
+      if (location.x !== 0 && location.y !== 0) {
         location.x -= 1;
         location.y -= 1;
         return location;

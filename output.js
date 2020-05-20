@@ -6,6 +6,7 @@ const print = (location, map) => {
 };
 
 const mapPrinting = (location, map) => {
+  
   process.stdout.write('\033[2J');
   map.mapOut[location.y][location.x] = 'x';
   console.log(table.table(map.mapOut));
