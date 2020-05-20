@@ -1,7 +1,7 @@
 const input = require('./input');
 const navigation = require('./navigation');
-const output = require('./output');
 const map = require('./map');
+const output = require('./output');
 
 const location = {
   x: 0,
@@ -14,6 +14,8 @@ console.log('Volt egyszer a köröskörül erdőben egy sudár, fiatal tölgyfa.
 while (location.x !== 4 || location.y !== 4) {
   const dir = input.inputFromNumPad();
   navigation.move(location, dir);
-  output.print(location, map);
+  // output.print(location, map);
+  output.mapPrinting(location, map);
+  map.mapOut[location.y][location.x] = ' ';
 }
 console.log('Vége!');
