@@ -8,54 +8,79 @@ Location = {
   y: #
 }
 */
+
 const move = (location, direction) => { // move return's with the new location
   switch (direction) {
-    case 1:
+    case '1':
       if (location.x !== 0 && location.y !== 4) {
         location.x -= 1;
         location.y += 1;
         return location;
       }
       break;
-    case 2:
+    case '2':
       if (location.y !== 4) {
         location.y += 1;
         return location;
       }
       break;
-    case 3:
+    case '[B':
+      if (location.y !== 4) {
+        location.y += 1;
+        return location;
+      }
+      break;
+    case '3':
       if (location.x !== 4 && location.y !== 4) {
         location.x += 1;
         location.y += 1;
         return location;
       }
       break;
-    case 4:
+    case '4':
       if (location.x !== 0) {
         location.x -= 1;
         return location;
       }
       break;
-    case 6:
+    case '[D':
+      if (location.x !== 0) {
+        location.x -= 1;
+        return location;
+      }
+      break;
+    case '6':
       if (location.x !== 4) {
         location.x += 1;
         return location;
       }
       break;
-    case 7:
+    case '[C':
+      if (location.x !== 4) {
+        location.x += 1;
+        return location;
+      }
+      break;
+    case '7':
       if (location.x !== 0 && location.y !== 0) {
         location.x -= 1;
         location.y -= 1;
         return location;
       }
       break;
-    case 8:
+    case '8':
       if (location.y !== 0) {
         location.y -= 1;
         return location;
       }
       break;
-    case 9:
+    case '[A':
+      if (location.y !== 0) {
+        location.y -= 1;
+        return location;
+      }
+      break;
+    case '9':
       if (location.x !== 4 && location.y !== 0) {
         location.x += 1;
         location.y -= 1;
