@@ -3,24 +3,24 @@ const table = require('table');
 const config = {
   columns: {
     0: {
-      alignment: 'rigth',
-      width: 5
+      alignment: 'right',
+      width: 2
     },
     1: {
       alignment: 'right',
-      width: 5
+      width: 2
     },
     2: {
       alignment: 'right',
-      width: 5
+      width: 2
     },
     3: {
       alignment: 'right',
-      width: 5
+      width: 2
     },
     4: {
       alignment: 'right',
-      width: 5
+      width: 2
     }
   }
 };
@@ -34,7 +34,7 @@ const print = (location, map) => {
 const mapPrinting = (location, map) => {
   process.stdout.write("\033[2J");
   map.mapOut[location.y][location.x] = ' x';
-  console.log(table.table(map.mapOut));
+  console.log(table.table(map.mapOut, config));
 };
 
 module.exports = {
