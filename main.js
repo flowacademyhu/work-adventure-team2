@@ -9,11 +9,15 @@ const location = {
 };
 output.mapPrinting(location, map);
 map.mapOut[location.y][location.x] = ' ';
-console.log('Your options:\n 1: Southwest;\n 2: South;\n 3: Southeast;\n 4: West;\n 6: East;\n 7: Northwest;\n 8: North;\n 9: Northeast.\n');
-console.log('Fésűs Éva: A büszke tölgyfa\n');
-console.log('1/25.  Volt egyszer a köröskörül erdőben egy sudár, fiatal tölgyfa. Kék ég felé nyújtózkodott, lombjain át arany napfényt szitálgatott, és erős gyökerével a föld minden erejét magába szívta. Ő volt a legszebb az erdőn.');
+
+if (location.x === 0 && location.y === 0) {
+  console.log('Fésűs Éva: A büszke tölgyfa\n');
+  console.log('1/25.  Volt egyszer a köröskörül erdőben egy sudár, fiatal tölgyfa. Kék ég felé nyújtózkodott, lombjain át arany napfényt szitálgatott, és erős gyökerével a föld minden erejét magába szívta. Ő volt a legszebb az erdőn.');
+}
 
 while (location.x !== 4 || location.y !== 4) {
+  console.log('\n\nChoose a direction:\n 1:  Southwest;  2:  South;  3:  Southeast;  4:  West;  6:  East;  7:  Northwest;  8:  North;  9:  Northeast.\n');
+
   const dir = input.inputFromNumPad();
   navigation.move(location, dir);
   output.mapPrinting(location, map);
