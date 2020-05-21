@@ -29,7 +29,7 @@ const map = [[{ label: 'A1', text: '1/25.  Volt egyszer a köröskörül erdőbe
   { label: 'E4', text: '24/25.  - Gyertek ide, hozzám!' },
   { label: 'E5', text: '25/25.  Azok nyomban odasereglettek, és örömükben olyan vidáman kezdtek csivitelni, füttyögetni, énekelni, mintha mi sem történt volna.' }]];
 
-const mapOut = [[' 1', ' 2', ' 3', ' 4', ' 5'], ['10', ' 9', ' 8', ' 7', ' 6'], ['11', '12', '13', '14', '15'], ['20', '19', '18', '17', '16'], ['21', '22', '23', '24', '25']];
+const mapOut = [['1', '2', '3', '4', '5'], ['10', '9', '8', '7', '6'], ['11', '12', '13', '14', '15'], ['20', '19', '18', '17', '16'], ['21', '22', '23', '24', '25']];
 // console.log(mapOut);
 module.exports = {
   map,
