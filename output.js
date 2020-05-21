@@ -1,5 +1,4 @@
 const table = require('table');
-const axel = require('axel');
 
 const print = (location, map) => {
   // console.log(map.map[location.y][location.x].label + ' mezőben állsz most.\n');
@@ -8,7 +7,7 @@ const print = (location, map) => {
 };
 
 const mapPrinting = (location, map) => {
-  axel.clear();
+  process.stdout.write("\033[2J");
   map.mapOut[location.y][location.x] = 'x';
   console.log(table.table(map.mapOut));
 };
