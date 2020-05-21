@@ -3,23 +3,23 @@ const table = require('table');
 const config = {
   columns: {
     0: {
-      alignment: 'center',
+      alignment: 'rigth',
       width: 5
     },
     1: {
-      alignment: 'center',
+      alignment: 'right',
       width: 5
     },
     2: {
-      alignment: 'center',
+      alignment: 'right',
       width: 5
     },
     3: {
-      alignment: 'center',
+      alignment: 'right',
       width: 5
     },
     4: {
-      alignment: 'center',
+      alignment: 'right',
       width: 5
     }
   }
