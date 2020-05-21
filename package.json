@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/flowacademyhu/work-adventure-team2#readme",
   "dependencies": {
+    "columns": "^0.8.0",
     "readline-sync": "^1.4.10",
     "table": "^5.4.6"
   }
